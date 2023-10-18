@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone2.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
 
@@ -16,12 +22,13 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
+        
 
     </nav>
     
     <section id="home">
-        <h1 class="heading">HELLO, I AM</h1>
-        <h1 class="heading">JOHANNES MOKIBELO MANTE</h1>
+        <h1 class="heading">HI, I AM</h1>
+        <h1 class="heading">JOHANNES MANTE</h1>
         <p>AND THIS IS MY PORTFOLIO</p>
 
     </section>
@@ -29,10 +36,10 @@
     <section id="portfolio">
         <h1 class="heading">Portfolio</h1>
         <div class="assets">
-            <img src="images/pic1.jpg" alt="">
-            <img src="images/pic2.jpg" alt="">
-            <img src="images/pic3.jpg" alt="">
-            <img src="images/pic4.jpg" alt="">
+            <img src="images/weather.png" alt="">
+            <img src="images/hotel.png" alt="">
+            <img src="images/hotel1.png" alt="">
+            <img src="images/country.png" alt="">
 
         </div>
     </section>
@@ -61,28 +68,74 @@
             <img src="pic.jpg" alt="My Pic">
             <div class="name">
                 <h2>I'm Johannes Mante</h2>
-                <p>Howzit!I'm a creative Junior Front-End Developer with a
-                     passion for bringing design ideas to life in the digital world. <br> <br>
-                     I completed my National Diploma in Information Technology at Tshwane 
-                     University of Technology, where I mastered programming languages like 
-                     C++, VB.NET, SQL, and gained essential IT skills. <br> <br>During a coding 
-                     bootcamp at mLab South Africa, I dived into HTML, CSS, JavaScript, React, 
-                     Git/GitHub, Bootstrap, and Firebase, building various applications to 
-                     demonstrate my practical skills. <br> <br>Beyond coding, I'm a self-taught 
-                     graphic designer, proficient in creating visuals using Photoshop CS6.</p>
+                <p><b>About Me</b> <br>
+                    Hi there! I'm Johannes Mante, a creative Junior Front-End Developer who loves turning cool design ideas into awesome digital stuff.
+                    
+                    <br><b>My Learning Journey</b><br>
+                    I studied Information Technology at Tshwane University of Technology. In college, I learned programming languages like C++, VB.NET, PL/SQL, SQL, and other important skills like UML, statistics, and business analysis. I'm also good with Excel and Word.
+                    
+                    <br><b>Always Learning</b><br>
+                    I also went to a coding bootcamp at mLab South Africa to learn more. There, I learned HTML, CSS, JavaScript, React, Git/GitHub, Bootstrap, and Firebase. During the bootcamp, I made a bunch of different apps, like a to-do list app, an expense tracker app, a hotel app, and even a weather app.
+                    
+                    <br><b>Being Creative Too</b><br>
+                    I'm not just into coding! I've taught myself graphic design using Photoshop CS6. I like making cool posters, logos, illustrations, and flyers. It's fun and makes my tech skills even better.
+                    
+                    <br> <b>My Goal</b><br>
+                    Looking ahead, I want to keep getting better as a Front-End Developer. I like mixing my coding skills with my love for design to make digital things that people enjoy using.
+                    
+                    <br> <b>Let's Connect</b> <br>
+                    I'm excited to work together and learn more. If you want to chat about tech, design, or anything else, feel free to reach out. You can connect with me on <a href="https://github.com/mantejohannes" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/johannes-mokibelo-mante-b74949124/" target="_blank">Linkedin</a>.
+                    
+                    Thanks for stopping by—I'm looking forward to hearing from you!</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h1 class="heading">Contact</h1>
-        <form action="" class="form">
-            <input type="text" name="name" class="input" placeholder="Enter Your Name">
-            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+
+        <form action="mail.php" method="post" class="form">
+            <input type="text" name="name" id="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" id="email" class="input" placeholder="Enter Your Email">
+            <input type="text" name="subject" id="subject" class="input" placeholder="Enter Your Subject">
             <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
+           
             <input type="submit" value="submit" id="submit">
         </form>
+
+<!-- example icon -->
+
+
     </section>
+
+    <div class="social-icons">
+
+
+        
+        <a href="https://www.facebook.com/johannessefoka.mante/" target="_blank">
+            <i class="social-icon" data-feather="facebook"></i>
+        </a> 
+        
+    
+        <a href="https://www.linkedin.com/in/johannes-mokibelo-mante-b74949124" target="_blank">
+            <i class="social-icon" data-feather="linkedin"></i>
+        </a>
+    
+        <a href="https://github.com/mantejohannes" target="_blank">
+            <i class="social-icon" data-feather="github"></i>
+        </a>
+
+        <a href="https://wa.me/+27680207723" target="_blank" class="whatsap">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        </div>
+    
+
+
+    <script>
+        feather.replace();
+      </script>
+
 
 </body>
 </html>
