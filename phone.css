@@ -13,7 +13,7 @@
     padding: 20px;
 }
 
-.box h2{
+.box h2, h3{
     color: yellow;
     font-size: 2rem;
     margin-bottom: 40px;
