@@ -39,3 +39,45 @@
 .name p{
     font-size: 1rem;
 }
+
+#home .heading {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlide 1s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.assets img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.assets img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #00aced; /* example for LinkedIn */
+    transition: all 0.3s ease;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
